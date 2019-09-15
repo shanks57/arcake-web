@@ -14,15 +14,12 @@ body{
 
 a{
   text-decoration: none;
+  color: black;
 }
 
 .wrap .menu{
   background:  #ffc5a1;
   height: 50px;
-}
-
-.wrap .menu:hover{
-
 }
 
 .wrap .menu ul{
@@ -32,7 +29,6 @@ a{
   overflow: hidden;
   background-color: #ffc5a1;
 }
-
 .wrap .menu ul li{
   display: block;
   background:  #ffc5a1;
@@ -45,6 +41,7 @@ a{
 
 .wrap .menu ul li:hover{
   background: wheat;
+  color: blue;
 }
 
 .clear{
@@ -56,20 +53,26 @@ a{
 }
 
 .wrap .body .sidebar{
-  background: orange;
+  background: wheat;
   float: left;
   width: 25%;
   height: 100%;
 }
 
 .wrap .body .content{
-  background: red;
+  background:#ff8585;
   float: left;
   height: 100%;
   width: 75%;
 }
 
+.aboutUs{
+  font-family: sans-serif;
+  padding: 10px;
+}
+
 .wrap .footer{
-  width: 100%;
+  width: auto;
+  background: #1c1852;
   padding: 10px;
 }
