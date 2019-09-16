@@ -41,11 +41,6 @@ a{
 
 .wrap .menu ul li:hover{
   background: wheat;
-  color: blue;
-}
-
-.clear{
-  clear: both;
 }
 
 .body{
@@ -64,6 +59,17 @@ a{
   float: left;
   height: 100%;
   width: 75%;
+}
+
+.wrap .body .content .contentMain{
+  padding: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.imageProduct{
+  border: #ffc5a1 9px solid;
+  height: 250px; 
+  width:360px; 
 }
 
 .aboutUs{
