@@ -62,6 +62,17 @@ a{
   width: 75%;
 }
 
+.form{
+  margin-left: 10px;
+}
+
+.wrap .body .contentFeedback{
+  background:#ff8585;
+  float: left;
+  height: 100%;
+  width: 75%;
+}
+
 .wrap .body .contentList{
   background:#ff8585;
   float: left;

@@ -3,6 +3,11 @@
     <head>
         <title>Arcake Store</title>
         <link rel="stylesheet" type="text/css" href="assets/styleMain.css">
+        <script type="text/javascript">
+        function message(){
+            alert("Thanks for your feedback!")
+        }
+        </script>
     </head>
     <body>
         <div class="wrap">
@@ -27,18 +32,22 @@
                     <center><h3>Product Hightlight</h3>
                     <img src="/arcakeStore/assets/img/hightlight.gif" style="width:250px;height:250px;border: 2px solid white;"></center>
                 </div>
-                <div class="content">
-                    <div class="contentMain">
-                    <center><img class="imageProduct" src="assets/img/chocolate_truffle_385.jpeg" alt="Chocolate Truffle">
-                    <h4>Chocolate Truffle<br>
-                    Price : 50$/Cake</h4></center>
-                    <p style="padding: 10px;font-family: sans-serif">Description : <br>Zest the flavors of this delicious cake with your mouth smudged with chocolate. It is the cake which will melt with every bite and will leave you enchanted by its taste.</p>
-                    </div>
+                <div class="contentFeedback">
+                    <center style="font-family: sans-serif;"><h2>Feedback Form</h2></center>
+                    <form method="GET" action="gambar.html" class="form" style="font-family: sans-serif;">
+                        <b>Enter your Name</b><br>
+                        <input type="text" name="var1" size="30" value=""><br><br>
+                        <b>Enter your Email</b><br>
+                        <input type="text" name="var2" size="30" value=""><br><br>
+                        <b>Enter Your Comment</b><br>
+                        <textarea name="var9" style="width: 250px;height: 100px;">Fill your comment here</textarea>
+                        <h4 style="color: red;font-family: sans-serif" onclick="message()"><a href="index.html">Submit</a></h4>
+                    </form> 
                 </div>
             </div>
             <div class="clear"></div>
             <div class="footer">
-                <center><h3 style="color: white">Powered By : Ardan Anjung Kusuma</h3></center>
+                    <center><h3 style="color: white">Powered By : Ardan Anjung Kusuma</h3></center>
             </div>
         </div>
     </body>
