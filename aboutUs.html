@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+        <meta charset="utf8">
         <title>Arcake Store</title>
         <link rel="stylesheet" type="text/css" href="assets/styleMain.css">
     </head>
@@ -20,14 +22,42 @@
                 <div class="sidebar">
                     <marquee><center style="margin-top: 5px">Best Seller Cake</center></marquee>
                     <ul>
-                        <li><a href="product.html">RASPBERRY VICTORIA SPONGE CAKE</a></li>
+                        <li><a href="victoriaSponge.html">RASPBERRY VICTORIA SPONGE CAKE</a></li>
                     </ul>
                 </div>
                 <div class="content">
                     <center><h1 class="aboutUs">About Our Store</h1>
-                    <a href="https://goo.gl/maps/MCTVyWNSA3QRpbWi9"><img style="width: 450px;height: 250px;" src="assets/img/maps.jpg"></a>
-                    <h2 class="aboutUs" style="color: black;border: 4px solid white;padding: 10px;margin: 0 200px 0 200px">Address : Jl. Senggani No.20<br>
-                    City : Malang</h2></center>
+                        <div id="map" style="width:450px;height:250px"></div>
+
+                        <script>
+                           function initMap() {
+                            var mapOptions = {
+                                zoom: 30,
+                                center: new google.maps.LatLng(-7.944917, 112.617056),
+                                mapTypeId: 'roadmap'
+                            };
+                            var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+                
+                            var arcakeLocation = {lat:-7.944917,lng: 112.617056};
+                            var marker = new google.maps.Marker({
+                                position: arcakeLocation,
+                                map: map,
+                                title: 'Arcake Location'
+                        });
+                            var contentString = '<h2>This Our Store!</h2>';
+                
+                            var infowindow = new google.maps.InfoWindow({
+                                content: contentString
+                            });
+                
+                            marker.addListener('click', function() {
+                                infowindow.open(map, marker);
+                            });
+                        }
+                        </script>
+                        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCF2F3iFyp6Snbb2_G64818EktCSajvWpQ&callback=initMap"></script><br>
+                        <h2 class="aboutUs" style="color: black;border: 4px solid white;padding: 10px;margin: 0 200px 0 200px">Address : Jl. Senggani No.20<br>
+                        City : Malang</h2></center>
                 </div>
             </div>
             <div class="clear"></div>

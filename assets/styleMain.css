@@ -60,7 +60,6 @@ a{
   float: left;
   height: 100%;
   width: 75%;
-  overflow: auto;
 }
 
 .wrap .body .content .contentMain{
